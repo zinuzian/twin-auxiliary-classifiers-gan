@@ -1,6 +1,6 @@
 #!/bin/bash
 export HDF5_USE_FILE_LOCKING='FALSE'
-CUDA_VISIBLE_DEVICES=0,1 python train.py \
+CUDA_VISIBLE_DEVICES=2,3 python train.py \
 --loss_type Twin_AC --AC \
 --AC_weight 1.0 \
 --shuffle --batch_size 100 --parallel \
